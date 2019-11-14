@@ -1,0 +1,111 @@
+body {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+h2 {
+    text-align: center;
+    margin-block-start: 1.2em;
+    margin-block-end: 1.2em;
+}
+.book {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+.book p {
+    flex-basis: 10%;
+    text-align: center;
+    position: relative;
+}
+.book p:first-of-type {
+    flex-basis: 35%;
+    text-align: left;
+    padding-left: 1.5em;
+}
+.book p:nth-last-child(-n+3) {
+    flex-basis: 5%;
+}
+.book p.genre {
+    flex-basis: 30%;
+}
+.book span {
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    font-style: italic;
+}
+.book p a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    line-height: 1.5em;
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    font-size: 2em;
+}
+.bold {
+    font-weight: bold;
+    background: #e9e9e9;
+}
+.input {
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.input label {
+    font-weight: bold;
+    text-align: right;
+    flex-basis: 15%;
+    padding: 0.6em;
+}
+.input input {
+    padding: 0.6em;
+    flex-basis: 90%;
+}
+.input input[type=submit] {
+    flex-basis: 100%;
+    background: green;
+    border: none;
+    color: white;
+    padding: 1em
+}
+.addBook {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: green;
+    line-height: 2em;
+}
+.list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 2em;
+}
+.error {
+    padding: 1em;
+    margin-bottom: 1em;
+    background:#e9e9e9;
+    color: rgb(223, 0, 0);
+    text-align: center;
+}
+.search {
+    display: flex;
+    justify-content: space-between;
+}
+.search input:first-of-type {
+    flex-basis: 80%;
+}
+.search input {
+    flex-basis: 20%;
+    padding: 1em;
+}
+.search input[type=submit] {
+    background: rgb(0, 87, 0);
+    color: white;
+    border: none;
+}
